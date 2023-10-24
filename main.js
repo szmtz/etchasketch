@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
             click = !click; 
             let draw = document.querySelector("#draw"); 
             if(click){
-                draw.innerHTML = "You are allowed to draw!"; 
+                draw.innerHTML = "Click anywhere to STOP drawing."; 
             }
             else {
-                draw.innerHTML = "You are not allowed to draw."; 
+                draw.innerHTML = "Click anywhere to START drawing."; 
             }
 
         }
