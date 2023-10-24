@@ -1,7 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", function() {
    
-    createBoard('32'); 
+    createBoard('32');
+    getSize();  
     console.log('hi'); 
 
 })
@@ -16,12 +17,15 @@ function createBoard(size) {
 
     for(let i = 0; i < numDivs; i++){
         let div = document.createElement("div"); 
+        div.style.backgroundColor = "yellow"; 
         board.insertAdjacentElement("beforeend", div); 
-
-        
-
 
     }
 
 
+}
+
+
+function getSize() {
+    let input = prompt("What will be the size of the board?"); 
 }
