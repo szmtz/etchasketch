@@ -1,7 +1,12 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-   
-    createBoard('32');
+    createBoard(16);
+    let btn_popup = document.querySelector("#popup"); 
+    btn_popup.addEventListener("click", function(){
+        let size = getSize(); 
+        createBoard(size); 
+    })
+
     console.log('hi'); 
 
 })
@@ -18,11 +23,8 @@ function createBoard(size) {
         let div = document.createElement("div"); 
         div.style.backgroundColor = "yellow"; 
         board.insertAdjacentElement("beforeend", div); 
-
+         }
     }
-
-
-}
 
 
 function getSize() {
@@ -31,7 +33,7 @@ function getSize() {
     if(input == ""){
         message.innerHTML = "Please provide a number"; 
     }
-    else if(input < 0 || > 100){
+    else if(input < 0 || input > 100){
         message.innerHTML = "Provide a number between 1 and 100"
     }
     else {
