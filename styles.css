@@ -15,6 +15,7 @@ body {
     align-items: center;
     width: 400px; 
     justify-content: space-around;
+    margin-bottom: 20px; 
 }
 
 
@@ -24,6 +25,7 @@ body {
     justify-content: space-between; 
     width: 500px; 
     align-items: center; 
+    margin-top: 20px; 
 }
 
 .board {
